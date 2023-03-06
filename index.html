@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FORMULÁRIO COM CSS</title>
+</head>
+<header>
+    <img src="morango.png" alt="">
+    <h1>Cadastro de produtos:</h1>
+</header>
+
+<body>
+    <p>Informe nos campos a seguir os dados do produto a ser cadastrado.</p>
+    <form action="https://target-api-simples.cyclic.app/generica" method="post">
+
+        <input placeholder="Nome do produto" type="text" name="nome" id="">
+        <input placeholder="Preço em R$" type="text" name="preco" id="">
+
+        <hr>
+
+        <input placeholder="Quantidade" type="number" name="quantidade" id="">
+
+        <select name="categoria" id="">
+            <option disable selected hidden value="">Selecione a categoria</option>
+            <option value="frutas">Frutas</option>
+            <option value="verduras">Verduras</option>
+            <option value="doces">Doces</option>
+            <option value="salgados">Salgados</option>
+
+
+        </select>
+
+        <hr>
+
+        <button>CADASTRAR</button>
+    </form>
+
+</body>
+
+</html>
